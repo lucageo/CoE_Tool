@@ -1,0 +1,20 @@
+[
+
+  {
+  "parameter" : "Aridity",
+  "processes" : [
+    { "PROCESS" : "Resample and Reclassify and Reproject",
+      "PROCESS_ID" : 0,
+      "PARAMS" : {
+        "classification": [[0, 1, 0], [2, 5, 1], [6, 8, 0]],
+        "output_param": {
+            "raster_output" : "D:/Python_projects/git/convergence/convergence/processes/finalout/aridity.tif",
+            "processing_folder": false,
+            "del_process": false
+        },
+        "input_RST" : "D:/Python_projects/git/convergence/input_raster/Aridity/ai10class.tif"
+      }
+    }
+  ]
+}
+]

@@ -1,0 +1,94 @@
+[
+{
+  "parameter" : "Land Cover",
+  "processes" : [
+    { "PROCESS" : "Resample and Reclassify and Reproject",
+      "PROCESS_ID" : 0,
+      "PARAMS" : {
+        "classification" : [
+          [0, 19, 0], [20, 39, 1], [40, 49, 2], [50, 59, 4],
+          [60, 69, 6], [70, 89, 0], [90, 99, 5], [100, 109, 6],
+          [110, 126, 3], [127, 255, 0]
+        ],
+       "output_param": {
+          "raster_output" : "D:/convergence_europe/coe/outputs/LC",
+          "processing_folder": false,
+          "del_process": false
+        },
+        "input_RST" : "D:/convergence_europe/coe/input/LC"
+      }
+    }
+  ]
+},
+{
+  "parameter" : "LPD",
+  "processes" : [
+    { "PROCESS" : "Resample and Reclassify and Reproject",
+      "PROCESS_ID" : 0,
+      "PARAMS" : {
+        "classification" : [
+          [0, 3, 1], [4, 5, 0]
+        ],
+       "output_param": {
+          "raster_output" : "D:/convergence_europe/coe/outputs/LPD",
+          "processing_folder": false,
+          "del_process": false
+        },
+        "input_RST" : "D:/convergence_europe/coe/input/LPD_europe"
+      }
+    }
+  ]
+},
+{
+  "parameter" : "Population",
+  "processes" : [
+    { "PROCESS" : "Stratification using Land Cover outputs and median values",
+      "PROCESS_ID" : 1,
+      "PARAMS" : {
+        "input_RST" : "D:/convergence_europe/pop/pop.tif",
+        "LC_output_data" : "D:/convergence_europe/coe/outputs/LC/",
+        "median_folder" : "D:/convergence_europe/coe/process/pop/",
+        "resolution" : 250,
+        "classes" : [1, 2, 3, 4, 5, 6],
+        "indicator_name" : "population",
+        "stat_method" : "greater",
+        "stat_stat" : "median"
+      }
+    },
+    { "PROCESS" : "Merge Tiles",
+      "PROCESS_ID" : 2,
+      "PARAMS" : {
+                "input_folder" : "D:/convergence_europe/coe/process/pop/",
+                "resolution" : 250,
+                "merged_out_path" : "D:/convergence_europe/coe/outputs/pop_out.tiff"
+      }
+    }
+  ]
+},
+  {
+  "parameter" : "BuiltUp",
+  "processes" : [
+    { "PROCESS" : "Stratification using Land Cover outputs and median values",
+      "PROCESS_ID" : 1,
+      "PARAMS" : {
+        "input_RST" : "D:/convergence_europe/coe/input/builtup/builtup.tif",
+        "LC_output_data" : "D:/convergence_europe/coe/outputs/LC/",
+        "median_folder" : "D:/convergence_europe/coe/process/built/",
+        "resolution" : 250,
+        "classes" : [1, 2, 3, 4, 5, 6],
+        "indicator_name" : "builtup",
+        "stat_method" : "greater",
+        "stat_stat" : "median"
+      }
+    },
+    { "PROCESS" : "Merge Tiles",
+      "PROCESS_ID" : 2,
+      "PARAMS" : {
+                "input_folder" : "D:/convergence_europe/coe/process/built/",
+                "resolution" : 250,
+                "merged_out_path" : "D:/convergence_europe/coe/outputs/built_out.tif"
+      }
+    }
+  ]
+}
+]

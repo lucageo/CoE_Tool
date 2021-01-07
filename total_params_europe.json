@@ -1,0 +1,23 @@
+[
+
+{
+  "parameter" : "LPD",
+  "processes" : [
+    { "PROCESS" : "Resample and Reclassify and Reproject",
+      "PROCESS_ID" : 0,
+      "PARAMS" : {
+        "classification" : [
+          [1, 1, 1], [0, 0, 0]
+        ],
+       "output_param": {
+          "raster_output" : "D:/convergence_europe/coe/outputs/LPD",
+          "processing_folder": false,
+          "del_process": false
+        },
+        "input_RST" : "D:/convergence_europe/coe/input/LPD_europe/lpd_rec_54009.tif"
+      }
+    }
+  ]
+}
+
+]
