@@ -30,6 +30,8 @@ The process of computation has these steps:
 
 
 
-
 ## Example Dataset
+
+Landcover
+Population
 
