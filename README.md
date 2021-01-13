@@ -22,11 +22,11 @@ Where all the processes are identified as being potentially contributing to land
 
 The process of computation has these steps:
 
-* Landcover definition *
-* Stratification *
-* No Stratification *
-* Convergence of Evidence *
-* Statistics *
+* Landcover definition 
+* Stratification 
+* No Stratification 
+* Convergence of Evidence 
+* Statistics 
 
 
 
