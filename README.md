@@ -15,10 +15,21 @@ In the repository is present the conve.yml file that contains the virtual enviro
 
 
 ## The process
+
 The Convergence of Evidence, is a map that shows the occurence of specific processes related to land degradation (which are indicated as global Change Issues - GCIs). 
 
 Where all the processes are identified as being potentially contributing to land degradation, none on its own is really enough to explain it (only in very specific cases). As we can't model the interaction, we 'simply' try to indicate how many of these processes (GCIs) are simultaneously at play and where this happens. The occurrence of such 'accumulation' at any given location indicates a certain stress on the land resources and suggest that potentially this led, or can lead, to land degradation. 
 
-The process of computation has 3 steps.
+The process of computation has these steps:
 
-First of all, we have to define the base of our analysis using the landcover.
+* Landcover definition *
+* Stratification *
+* No Stratification *
+* Convergence of Evidence *
+* Statistics *
+
+
+
+
+## Example Dataset
+
