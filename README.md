@@ -32,6 +32,5 @@ The process of computation has these steps:
 
 ## Example Dataset
 
-Landcover
-Population
+Is it possible to download [here](https://drive.google.com/drive/folders/11N1Xrtmr0bpeVYYIJVUEAkKpFCm-ZmYs?usp=sharing) an example dataset 
 
