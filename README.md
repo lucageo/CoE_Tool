@@ -10,17 +10,16 @@ In the framework of the World Atlas of Desertification, 14 indicators, called Gl
 ## Install
 
 The Tool is provided as Jupiter notebook. It depends on the libraries: GDAL, Rasterio, Geotiff, Numpy and Time.
-In the repository is present the conve.yml file that contains the virtual environment setup.
-
+The virtual environmental setup is defined in the conve.yml.
 
 
 ## The process
 
-The Convergence of Evidence, is a map that shows the occurence of specific processes related to land degradation (which are indicated as global Change Issues - GCIs). 
+The Convergence of Evidence is a map showing the occurence of specific processes related to land degradation (which are indicated as global Change Issues - GCIs). 
 
 Where all the processes are identified as being potentially contributing to land degradation, none on its own is really enough to explain it (only in very specific cases). As we can't model the interaction, we 'simply' try to indicate how many of these processes (GCIs) are simultaneously at play and where this happens. The occurrence of such 'accumulation' at any given location indicates a certain stress on the land resources and suggest that potentially this led, or can lead, to land degradation. 
 
-The process of computation has these steps:
+The computation' process includes the following steps:
 
 * Landcover definition 
 * Stratification 
@@ -32,5 +31,4 @@ The process of computation has these steps:
 
 ## Example Dataset
 
-It is possible to download [here](https://drive.google.com/drive/folders/11N1Xrtmr0bpeVYYIJVUEAkKpFCm-ZmYs?usp=sharing) an example dataset 
-
+You can download sample data [here](https://drive.google.com/drive/folders/11N1Xrtmr0bpeVYYIJVUEAkKpFCm-ZmYs?usp=sharing) 
